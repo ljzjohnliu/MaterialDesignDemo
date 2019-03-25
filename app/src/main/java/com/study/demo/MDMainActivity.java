@@ -1,4 +1,4 @@
-package com.md.demo;
+package com.study.demo;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 import android.view.View;
 
-import com.md.demo.recyclerview.MDRvMainActivity;
+import com.study.demo.recyclerview.MDRvMainActivity;
 
 /**
  * main page of the app

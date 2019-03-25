@@ -1,14 +1,14 @@
-package com.md.demo.recyclerview;
+package com.study.demo.recyclerview;
 
 import android.os.Bundle;
 import android.support.v7.widget.OrientationHelper;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 
-import com.md.demo.MDBaseActivity;
-import com.md.demo.R;
-import com.md.demo.recyclerview.adapter.MDStaggeredRvAdapter;
-import com.md.demo.recyclerview.mock.MDMockData;
+import com.study.demo.MDBaseActivity;
+import com.study.demo.R;
+import com.study.demo.recyclerview.adapter.MDStaggeredRvAdapter;
+import com.study.demo.recyclerview.mock.MDMockData;
 
 /**
  * staggered {@link android.support.v7.widget.RecyclerView} page

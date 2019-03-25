@@ -1,4 +1,4 @@
-package com.md.demo.recyclerview;
+package com.study.demo.recyclerview;
 
 import android.graphics.Canvas;
 import android.os.Bundle;
@@ -7,10 +7,10 @@ import android.support.v7.widget.OrientationHelper;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.helper.ItemTouchHelper;
 
-import com.md.demo.MDBaseActivity;
-import com.md.demo.R;
-import com.md.demo.recyclerview.adapter.MDDragRvAdapter;
-import com.md.demo.recyclerview.mock.MDMockData;
+import com.study.demo.MDBaseActivity;
+import com.study.demo.R;
+import com.study.demo.recyclerview.adapter.MDDragRvAdapter;
+import com.study.demo.recyclerview.mock.MDMockData;
 
 /**
  * Created by wangkegang on 2016/07/11 .

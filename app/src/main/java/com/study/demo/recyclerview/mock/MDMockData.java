@@ -1,4 +1,4 @@
-package com.md.demo.recyclerview.mock;
+package com.study.demo.recyclerview.mock;
 
 import android.support.v7.widget.RecyclerView;
 

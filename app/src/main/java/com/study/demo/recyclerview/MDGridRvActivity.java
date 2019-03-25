@@ -1,15 +1,15 @@
-package com.md.demo.recyclerview;
+package com.study.demo.recyclerview;
 
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.OrientationHelper;
 import android.support.v7.widget.RecyclerView;
 
-import com.md.demo.MDBaseActivity;
-import com.md.demo.R;
-import com.md.demo.recyclerview.adapter.MDRvAdapter;
-import com.md.demo.recyclerview.decoration.MDGridRvDividerDecoration;
-import com.md.demo.recyclerview.mock.MDMockData;
+import com.study.demo.MDBaseActivity;
+import com.study.demo.R;
+import com.study.demo.recyclerview.adapter.MDRvAdapter;
+import com.study.demo.recyclerview.decoration.MDGridRvDividerDecoration;
+import com.study.demo.recyclerview.mock.MDMockData;
 
 /**
  * grid {@link RecyclerView} page

@@ -1,4 +1,4 @@
-package com.md.demo.recyclerview.decoration;
+package com.study.demo.recyclerview.decoration;
 
 import android.content.Context;
 import android.content.res.TypedArray;

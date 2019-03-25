@@ -1,4 +1,4 @@
-package com.md.demo.recyclerview;
+package com.study.demo.recyclerview;
 
 import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -8,10 +8,10 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.md.demo.MDBaseActivity;
-import com.md.demo.R;
-import com.md.demo.recyclerview.adapter.MDRvAdapter;
-import com.md.demo.recyclerview.decoration.MDLinearRvDividerDecoration;
+import com.study.demo.MDBaseActivity;
+import com.study.demo.R;
+import com.study.demo.recyclerview.adapter.MDRvAdapter;
+import com.study.demo.recyclerview.decoration.MDLinearRvDividerDecoration;
 
 import java.util.ArrayList;
 

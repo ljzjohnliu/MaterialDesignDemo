@@ -1,4 +1,4 @@
-package com.md.demo.recyclerview.adapter;
+package com.study.demo.recyclerview.adapter;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -6,27 +6,27 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.md.demo.R;
+import com.study.demo.R;
 
 import java.util.ArrayList;
 
 /**
- * Created by wangkegang on 2016/07/08 .
+ * Created by wangkegang on 2016/07/11 .
  */
-public class MDSwipeRvAdapter extends RecyclerView.Adapter<MDSwipeRvAdapter.ViewHolder>{
+public class MDDragRvAdapter extends RecyclerView.Adapter<MDDragRvAdapter.ViewHolder> {
     /**
      * 展示数据
      */
     private ArrayList<String> mData;
 
-    public MDSwipeRvAdapter(ArrayList<String> data) {
+    public MDDragRvAdapter(ArrayList<String> data) {
         this.mData = data;
     }
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         // 实例化展示的view
-        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.view_rv_item, parent, false);
+        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.view_rv_drag_item, parent, false);
         // 实例化viewholder
         ViewHolder viewHolder = new ViewHolder(v);
         return viewHolder;
@@ -43,12 +43,10 @@ public class MDSwipeRvAdapter extends RecyclerView.Adapter<MDSwipeRvAdapter.View
         return mData == null ? 0 : mData.size();
     }
 
-    public void delete(int position) {
-        if(position < 0 || position > getItemCount()) {
-            return;
-        }
-        mData.remove(position);
-        notifyItemRemoved(position);
+    public void move(int fromPosition, int toPosition) {
+        String prev = mData.remove(fromPosition);
+        mData.add(toPosition > fromPosition ? toPosition - 1 : toPosition, prev);
+        notifyItemMoved(fromPosition, toPosition);
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {

@@ -1,12 +1,12 @@
-package com.md.demo.recyclerview;
+package com.study.demo.recyclerview;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-import com.md.demo.MDBaseActivity;
-import com.md.demo.R;
+import com.study.demo.MDBaseActivity;
+import com.study.demo.R;
 
 /**
  * Created by wangkegang on 2016/07/05 .

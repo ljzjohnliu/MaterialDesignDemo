@@ -1,4 +1,4 @@
-package com.md.demo.recyclerview.adapter;
+package com.study.demo.recyclerview.adapter;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -6,7 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.md.demo.R;
+import com.study.demo.R;
 
 import java.util.ArrayList;
 
