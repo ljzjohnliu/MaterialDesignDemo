@@ -17,7 +17,7 @@ import java.util.ArrayList;
 
 /**
  * linear {@link RecyclerView} page
- *
+ * <p>
  * Created by KyoWang on 2016/06/30 .
  */
 public class MDLinearRvActivity extends MDBaseActivity implements View.OnClickListener {
@@ -44,10 +44,10 @@ public class MDLinearRvActivity extends MDBaseActivity implements View.OnClickLi
     @Override
     public void onClick(View v) {
         int id = v.getId();
-        if(id == R.id.rv_add_item_btn) {
+        if (id == R.id.rv_add_item_btn) {
             mAdapter.addNewItem();
             mLayoutManager.scrollToPosition(0);
-        } else if(id == R.id.rv_del_item_btn){
+        } else if (id == R.id.rv_del_item_btn) {
             mAdapter.deleteItem();
             mLayoutManager.scrollToPosition(0);
         }
@@ -60,12 +60,12 @@ public class MDLinearRvActivity extends MDBaseActivity implements View.OnClickLi
         mAdapter.setOnItemClickListener(new MDRvAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(View view, int position) {
-                Toast.makeText(MDLinearRvActivity.this,"click " + position + " item", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MDLinearRvActivity.this, "click " + position + " item", Toast.LENGTH_SHORT).show();
             }
 
             @Override
             public void onItemLongClick(View view, int position) {
-                Toast.makeText(MDLinearRvActivity.this,"long click " + position + " item", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MDLinearRvActivity.this, "long click " + position + " item", Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -92,7 +92,7 @@ public class MDLinearRvActivity extends MDBaseActivity implements View.OnClickLi
     private ArrayList<String> getData() {
         ArrayList<String> data = new ArrayList<>();
         String temp = " item";
-        for(int i = 0; i < 20; i++) {
+        for (int i = 0; i < 20; i++) {
             data.add(i + temp);
         }
 

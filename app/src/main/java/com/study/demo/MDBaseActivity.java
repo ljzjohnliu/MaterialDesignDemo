@@ -6,7 +6,7 @@ import android.view.MenuItem;
 
 /**
  * Base activity of the app, show back button in actionbar
- *
+ * <p>
  * Created by wangkegang on 2016/06/30 .
  */
 public class MDBaseActivity extends AppCompatActivity {
@@ -19,7 +19,7 @@ public class MDBaseActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        if(item.getItemId() == android.R.id.home) {
+        if (item.getItemId() == android.R.id.home) {
             this.finish();
             return true;
         }

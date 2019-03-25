@@ -53,7 +53,7 @@ public class MDSwipeToDismissActivity extends MDBaseActivity {
              */
             @Override
             public int getMovementFlags(RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder) {
-                return makeMovementFlags(0,ItemTouchHelper.START | ItemTouchHelper.END);
+                return makeMovementFlags(0, ItemTouchHelper.START | ItemTouchHelper.END);
             }
 
             /**
@@ -119,7 +119,7 @@ public class MDSwipeToDismissActivity extends MDBaseActivity {
             @Override
             public void onSelectedChanged(RecyclerView.ViewHolder viewHolder, int actionState) {
                 //  item被选中的操作
-                if(actionState != ItemTouchHelper.ACTION_STATE_IDLE) {
+                if (actionState != ItemTouchHelper.ACTION_STATE_IDLE) {
                     viewHolder.itemView.setBackgroundResource(R.color.md_gray);
                 }
                 super.onSelectedChanged(viewHolder, actionState);
@@ -141,15 +141,12 @@ public class MDSwipeToDismissActivity extends MDBaseActivity {
              *          如果当前被用户操作为true，反之为false
              */
             @Override
-            public void onChildDraw(Canvas c, RecyclerView recyclerView,
-                                    RecyclerView.ViewHolder viewHolder,
-                                    float dX, float dY, int actionState, boolean isCurrentlyActive) {
+            public void onChildDraw(Canvas c, RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder, float dX, float dY, int actionState, boolean isCurrentlyActive) {
                 float x = Math.abs(dX) + 0.5f;
                 float width = viewHolder.itemView.getWidth();
                 float alpha = 1f - x / width;
                 viewHolder.itemView.setAlpha(alpha);
-                super.onChildDraw(c, recyclerView, viewHolder, dX, dY, actionState,
-                        isCurrentlyActive);
+                super.onChildDraw(c, recyclerView, viewHolder, dX, dY, actionState, isCurrentlyActive);
             }
 
             /**
@@ -168,11 +165,8 @@ public class MDSwipeToDismissActivity extends MDBaseActivity {
              *          如果当前被用户操作为true，反之为false
              */
             @Override
-            public void onChildDrawOver(Canvas c, RecyclerView recyclerView,
-                                        RecyclerView.ViewHolder viewHolder, float dX, float dY, int actionState,
-                                        boolean isCurrentlyActive) {
-                super.onChildDrawOver(c, recyclerView, viewHolder, dX, dY, actionState,
-                        isCurrentlyActive);
+            public void onChildDrawOver(Canvas c, RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder, float dX, float dY, int actionState, boolean isCurrentlyActive) {
+                super.onChildDrawOver(c, recyclerView, viewHolder, dX, dY, actionState, isCurrentlyActive);
             }
 
             /**

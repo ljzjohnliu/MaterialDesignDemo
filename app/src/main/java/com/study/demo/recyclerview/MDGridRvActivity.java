@@ -13,7 +13,7 @@ import com.study.demo.recyclerview.mock.MDMockData;
 
 /**
  * grid {@link RecyclerView} page
- *
+ * <p>
  * Created by wangkegang on 2016/07/05 .
  */
 public class MDGridRvActivity extends MDBaseActivity {

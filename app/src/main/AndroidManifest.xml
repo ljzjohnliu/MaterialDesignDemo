@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest package="com.study.demo"
-          xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.study.demo">
 
     <application
         android:allowBackup="true"
@@ -10,17 +10,17 @@
         android:theme="@style/AppTheme">
         <activity android:name="com.study.demo.MDMainActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.study.demo.recyclerview.MDRvMainActivity"/>
-        <activity android:name="com.study.demo.recyclerview.MDLinearRvActivity"/>
-        <activity android:name="com.study.demo.recyclerview.MDGridRvActivity"/>
-        <activity android:name="com.study.demo.recyclerview.MDStaggeredRvActivity"/>
-        <activity android:name="com.study.demo.recyclerview.MDSwipeToDismissActivity"/>
-        <activity android:name="com.study.demo.recyclerview.MDDragRvActivity"/>
+        <activity android:name="com.study.demo.recyclerview.MDRvMainActivity" />
+        <activity android:name="com.study.demo.recyclerview.MDLinearRvActivity" />
+        <activity android:name="com.study.demo.recyclerview.MDGridRvActivity" />
+        <activity android:name="com.study.demo.recyclerview.MDStaggeredRvActivity" />
+        <activity android:name="com.study.demo.recyclerview.MDSwipeToDismissActivity" />
+        <activity android:name="com.study.demo.recyclerview.MDDragRvActivity" />
     </application>
 
 </manifest>

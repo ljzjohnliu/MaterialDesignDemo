@@ -6,14 +6,14 @@ import java.util.ArrayList;
 
 /**
  * provides data for {@link RecyclerView}
- *
+ * <p>
  * Created by wangkegang on 2016/07/06 .
  */
 public class MDMockData {
     public static ArrayList<String> getRvData() {
         ArrayList<String> data = new ArrayList<>();
         String temp = " item";
-        for(int i = 0; i < 50; i++) {
+        for (int i = 0; i < 50; i++) {
             data.add(i + temp);
         }
 

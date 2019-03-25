@@ -12,10 +12,10 @@ import java.util.ArrayList;
 
 /**
  * This implementation of {@link RecyclerView.Adapter}
- *
+ * <p>
  * Created by KyoWang on 2016/06/30 .
  */
-public class MDRvAdapter extends RecyclerView.Adapter<MDRvAdapter.ViewHolder>{
+public class MDRvAdapter extends RecyclerView.Adapter<MDRvAdapter.ViewHolder> {
 
     /**
      * 展示数据
@@ -40,7 +40,7 @@ public class MDRvAdapter extends RecyclerView.Adapter<MDRvAdapter.ViewHolder>{
      * 添加新的Item
      */
     public void addNewItem() {
-        if(mData == null) {
+        if (mData == null) {
             mData = new ArrayList<>();
         }
         mData.add(0, "new Item");
@@ -51,7 +51,7 @@ public class MDRvAdapter extends RecyclerView.Adapter<MDRvAdapter.ViewHolder>{
      * 删除Item
      */
     public void deleteItem() {
-        if(mData == null || mData.isEmpty()) {
+        if (mData == null || mData.isEmpty()) {
             return;
         }
         mData.remove(0);
@@ -84,7 +84,7 @@ public class MDRvAdapter extends RecyclerView.Adapter<MDRvAdapter.ViewHolder>{
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(final View v) {
-                if(onItemClickListener != null) {
+                if (onItemClickListener != null) {
                     int pos = holder.getLayoutPosition();
                     onItemClickListener.onItemClick(holder.itemView, pos);
                 }
@@ -94,7 +94,7 @@ public class MDRvAdapter extends RecyclerView.Adapter<MDRvAdapter.ViewHolder>{
         holder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View v) {
-                if(onItemClickListener != null) {
+                if (onItemClickListener != null) {
                     int pos = holder.getLayoutPosition();
                     onItemClickListener.onItemLongClick(holder.itemView, pos);
                 }
@@ -109,6 +109,12 @@ public class MDRvAdapter extends RecyclerView.Adapter<MDRvAdapter.ViewHolder>{
         return mData == null ? 0 : mData.size();
     }
 
+    public interface OnItemClickListener {
+        void onItemClick(View view, int position);
+
+        void onItemLongClick(View view, int position);
+    }
+
     public static class ViewHolder extends RecyclerView.ViewHolder {
 
         TextView mTv;
@@ -117,10 +123,5 @@ public class MDRvAdapter extends RecyclerView.Adapter<MDRvAdapter.ViewHolder>{
             super(itemView);
             mTv = (TextView) itemView.findViewById(R.id.item_tv);
         }
-    }
-
-    public interface OnItemClickListener {
-        void onItemClick(View view, int position);
-        void onItemLongClick(View view, int position);
     }
 }

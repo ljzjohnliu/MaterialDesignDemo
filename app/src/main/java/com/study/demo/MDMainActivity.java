@@ -10,7 +10,7 @@ import com.study.demo.recyclerview.MDRvMainActivity;
 
 /**
  * main page of the app
- *
+ * <p>
  * Created by KyoWang on 2016/06/30 .
  */
 public class MDMainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -28,7 +28,7 @@ public class MDMainActivity extends AppCompatActivity implements View.OnClickLis
     @Override
     public void onClick(View v) {
         int id = v.getId();
-        if(id == R.id.to_rv_page_btn) {
+        if (id == R.id.to_rv_page_btn) {
             goToRvPage();
         }
     }

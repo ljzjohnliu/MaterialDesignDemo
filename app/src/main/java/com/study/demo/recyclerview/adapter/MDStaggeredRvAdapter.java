@@ -39,7 +39,7 @@ public class MDStaggeredRvAdapter extends RecyclerView.Adapter<MDStaggeredRvAdap
     public MDStaggeredRvAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         // 实例化展示的view
         View v;
-        if(viewType == 1) {
+        if (viewType == 1) {
             v = LayoutInflater.from(parent.getContext()).inflate(R.layout.view_rv_staggered_item, parent, false);
         } else {
             v = LayoutInflater.from(parent.getContext()).inflate(R.layout.view_rv_staggered_item_two, parent, false);

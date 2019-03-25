@@ -51,19 +51,19 @@ public class MDRvMainActivity extends MDBaseActivity implements View.OnClickList
     @Override
     public void onClick(View v) {
         int id = v.getId();
-        if(id == R.id.to_linear_rv_page_btn) {
+        if (id == R.id.to_linear_rv_page_btn) {
             Intent intent = new Intent(this, MDLinearRvActivity.class);
             startActivity(intent);
-        } else if(id == R.id.to_grid_rv_page_btn) {
+        } else if (id == R.id.to_grid_rv_page_btn) {
             Intent intent = new Intent(this, MDGridRvActivity.class);
             startActivity(intent);
-        } else if(id == R.id.to_staggered_rv_page_btn) {
+        } else if (id == R.id.to_staggered_rv_page_btn) {
             Intent intent = new Intent(this, MDStaggeredRvActivity.class);
             startActivity(intent);
-        } else if(id == R.id.to_swipe_rv_page_btn) {
+        } else if (id == R.id.to_swipe_rv_page_btn) {
             Intent intent = new Intent(this, MDSwipeToDismissActivity.class);
             startActivity(intent);
-        } else if(id == R.id.to_drag_rv_page_btn) {
+        } else if (id == R.id.to_drag_rv_page_btn) {
             Intent intent = new Intent(this, MDDragRvActivity.class);
             startActivity(intent);
         }

@@ -118,7 +118,7 @@ public class MDDragRvActivity extends MDBaseActivity {
             @Override
             public void onSelectedChanged(RecyclerView.ViewHolder viewHolder, int actionState) {
                 //  item被选中的操作
-                if(actionState != ItemTouchHelper.ACTION_STATE_IDLE) {
+                if (actionState != ItemTouchHelper.ACTION_STATE_IDLE) {
                     viewHolder.itemView.setBackgroundResource(R.color.md_gray);
                 }
                 super.onSelectedChanged(viewHolder, actionState);
@@ -140,11 +140,8 @@ public class MDDragRvActivity extends MDBaseActivity {
              *          如果当前被用户操作为true，反之为false
              */
             @Override
-            public void onChildDraw(Canvas c, RecyclerView recyclerView,
-                                    RecyclerView.ViewHolder viewHolder,
-                                    float dX, float dY, int actionState, boolean isCurrentlyActive) {
-                super.onChildDraw(c, recyclerView, viewHolder, dX, dY, actionState,
-                        isCurrentlyActive);
+            public void onChildDraw(Canvas c, RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder, float dX, float dY, int actionState, boolean isCurrentlyActive) {
+                super.onChildDraw(c, recyclerView, viewHolder, dX, dY, actionState, isCurrentlyActive);
             }
 
             /**
@@ -163,11 +160,8 @@ public class MDDragRvActivity extends MDBaseActivity {
              *          如果当前被用户操作为true，反之为false
              */
             @Override
-            public void onChildDrawOver(Canvas c, RecyclerView recyclerView,
-                                        RecyclerView.ViewHolder viewHolder, float dX, float dY, int actionState,
-                                        boolean isCurrentlyActive) {
-                super.onChildDrawOver(c, recyclerView, viewHolder, dX, dY, actionState,
-                        isCurrentlyActive);
+            public void onChildDrawOver(Canvas c, RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder, float dX, float dY, int actionState, boolean isCurrentlyActive) {
+                super.onChildDrawOver(c, recyclerView, viewHolder, dX, dY, actionState, isCurrentlyActive);
             }
 
             /**

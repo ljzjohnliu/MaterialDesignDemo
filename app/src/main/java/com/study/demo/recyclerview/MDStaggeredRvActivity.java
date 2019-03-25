@@ -12,7 +12,7 @@ import com.study.demo.recyclerview.mock.MDMockData;
 
 /**
  * staggered {@link android.support.v7.widget.RecyclerView} page
- *
+ * <p>
  * Created by wangkegang on 2016/07/06 .
  */
 public class MDStaggeredRvActivity extends MDBaseActivity {

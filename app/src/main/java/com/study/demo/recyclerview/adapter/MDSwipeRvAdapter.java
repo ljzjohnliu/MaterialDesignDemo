@@ -13,7 +13,7 @@ import java.util.ArrayList;
 /**
  * Created by wangkegang on 2016/07/08 .
  */
-public class MDSwipeRvAdapter extends RecyclerView.Adapter<MDSwipeRvAdapter.ViewHolder>{
+public class MDSwipeRvAdapter extends RecyclerView.Adapter<MDSwipeRvAdapter.ViewHolder> {
     /**
      * 展示数据
      */
@@ -44,7 +44,7 @@ public class MDSwipeRvAdapter extends RecyclerView.Adapter<MDSwipeRvAdapter.View
     }
 
     public void delete(int position) {
-        if(position < 0 || position > getItemCount()) {
+        if (position < 0 || position > getItemCount()) {
             return;
         }
         mData.remove(position);
